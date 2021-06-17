@@ -1,6 +1,6 @@
 #!/bin/bash
-# This script controls the local BOINC clients to balance CPU and GPU comuting with heat load for the
-# house with the outside air temp and HVAC load. This script requires the 'weather-util' package to be
+# This script controls the local BOINC clients to balance CPU and GPU computing heat load for the
+# house with the outside air temp. This script requires the 'weather-util' package to be
 # installed.
 
 ##### Configuration Settings #####
