@@ -4,7 +4,7 @@
 # installed.
 
 ##### Configuration Settings #####
-# BOINC Hosts to control
+# BOINC Hosts to control. List DNS names with one space between host entries.
 BOINC_HOST="amaranth rimbeth trebeth joruth keranth"
 
 # BOINC RPC password
