@@ -33,7 +33,7 @@ logger -t boinc-weather-control "${MESSAGE}"
 
 # Obtain weather data from the weather-util app
 OUTSIDE_TEMP=$(weather fips5163093651 --headers=Temperature --no-cache | grep Temperature | awk '{gsub("[.]", "", $2); print $2}')
-WEATHER_LAST_UPDATE_TIME=$(weather fips5163093651 | sed -n '2p')
+WEATHER_LAST_UPDATE_TIME=$(weather fips5163093651 | sed -n '2p' | awk '{print $1,$2,$3,$4,$5,$7,$8,$9}')
 wait
 if [[ ${?} -eq "0" ]]
         then
